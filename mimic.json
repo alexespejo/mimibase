@@ -1,0 +1,38 @@
+{
+   "cities": {
+      "new_york": {
+         "schools": [
+            "NYU"
+         ]
+      },
+      "california": {
+         "schools": [
+            "UCLA",
+            "USC",
+            "Standford"
+         ]
+      },
+      "arizona": {
+         "schools": [
+            "ASU",
+            "Arizona State University"
+         ]
+      },
+      "new_jersey": {
+         "schools": [
+            "prinston"
+         ]
+      },
+      "ohio": {
+         "schools": [
+            "Ohio State University"
+         ]
+      },
+      "massachusetts": {
+         "schools": [
+            "Harvard",
+            "Boston College"
+         ]
+      }
+   }
+}

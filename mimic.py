@@ -2,11 +2,12 @@ import json
 import string
 import random
 
+
 # public a string of random characters
 def randomID():
-    return "".join(
-        [random.choice(string.ascii_letters + string.digits) for n in range(8)]
-    )
+    return "".join([
+        random.choice(string.ascii_letters + string.digits) for n in range(8)
+    ])
 
 
 # param directory to json file, returns json file in the form of an object
@@ -28,6 +29,7 @@ def writeJSON(fileName="./mimic.json", data=None):
 
 
 class Collection:
+
     def __init__(self, key):
         self._id = key
         self.fn = "./mimic.json"
@@ -96,9 +98,9 @@ class Collection:
         _keys = self.getKeys()
         if _target in self.body[_keys][_count]:
             listFound.append(self.body[_keys[_count]])
-            return self.find_all_docs(
-                _target=_target, _list_found=listFound, _count=_count + 1
-            )
+            return self.find_all_docs(_target=_target,
+                                      _list_found=listFound,
+                                      _count=_count + 1)
 
     def find_doc(self, _id, key):
         try:
